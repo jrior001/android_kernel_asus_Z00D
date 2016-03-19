@@ -1,3 +1,11 @@
+static int PROJECT_ID;
+static int HARDWARE_ID;
+static int PCB_ID;
+static int TP_ID;
+static int RC_VERSION;
+static int SKU_ID;
+static int FCAM_ID;
+#endif /* CONFIG_ME372CL || CONFIG_PF450CL */
 /* sfi.h Simple Firmware Interface */
 
 /*
@@ -175,7 +183,7 @@ struct sfi_gpio_table_entry {
 	char	pin_name[SFI_NAME_LEN];
 } __packed;
 
-#if defined(CONFIG_ZE500CL) || defined(CONFIG_PF450CL)
+#ifdef CONFIG_PF450CL
 struct sfi_oemr_table_entry {
 	u8      RC_VERSION;
 	u8      SIM_id;

@@ -70,6 +70,7 @@ short g_TXNum;
 
 /*zax 20141116 ++++++++++++++*/
 int TPrawdata[TX_NUM_MAX][RX_NUM_MAX];
+int Save_rawData1[TX_NUM_MAX][RX_NUM_MAX];
 int TX_NUM;
 int RX_NUM;
 int SCab_1;
