@@ -62,7 +62,7 @@ struct hmm_bo_device {
 
 	/* list lock is used to protect both of the buffer object lists */
 	struct spinlock		list_lock;
-#ifdef CONFIG_ION_FOR_CAMERA
+#ifdef CONFIG_ION
 	struct ion_client	*iclient;
 #endif
 	int			flag;
